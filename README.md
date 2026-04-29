@@ -1,5 +1,5 @@
 # Odkaz
-Github pages:
+Github pages: https://pslib-cz.github.io/2025-p2b-web-project-Nguyen-Tran-Pslib/
 
 # Koncept webu
 Web je na cukrárnu. Jeho účel je e-shopy až spíše informativní.
