@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cukrárna - Úvod</title>
+    <title>Cukrárna - Dorty</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <nav class="nav">
             <div class="container">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="dorty.html" class="nav__link">Dorty</a></li>
+                    <li class="nav__item"><a href="dorty.html" class="nav__link nav__link--active">Dorty</a></li>
                     <li class="nav__item"><a href="zakusky.html" class="nav__link">Zákusky</a></li>
                     <li class="nav__item"><a href="o-nas.html" class="nav__link">O nás</a></li>
                     <li class="nav__item"><a href="kontakty.html" class="nav__link">Kontakty</a></li>
@@ -32,15 +32,16 @@
     <main class="main">
         <section class="section section--torts">
             <div class="container">
-                <h2 class="section__title">Dorty</h2>
+                <h1 class="section__title">Naše Dorty</h1>
+                <p class="section__text" style="text-align: center; margin-bottom: 2rem;">Vyberte si z naší široké nabídky poctivých dortů. Pečeme z kvalitních surovin a s láskou.</p>
                 <div class="product-grid">
                     <!-- Produkt 1 -->
                     <article class="product-card">
                         <div class="product-card__image-wrapper">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
                         </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
+                        <h3 class="product-card__title">Čokoládový sen</h3>
+                        <p class="product-card__desc">Bohatý čokoládový dort s malinami. (Alergeny: 1, 3, 7)</p>
                         <button class="product-card__button">Koupit</button>
                     </article>
                     <!-- Produkt 2 -->
@@ -48,8 +49,8 @@
                         <div class="product-card__image-wrapper">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
                         </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
+                        <h3 class="product-card__title">Ovocný lehký dort</h3>
+                        <p class="product-card__desc">Piškot s mascarpone a čerstvým ovocem. (Alergeny: 1, 3, 7)</p>
                         <button class="product-card__button">Koupit</button>
                     </article>
                     <!-- Produkt 3 -->
@@ -57,8 +58,8 @@
                         <div class="product-card__image-wrapper">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
                         </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
+                        <h3 class="product-card__title">Karamelový speciál</h3>
+                        <p class="product-card__desc">Slaný karamel a ořechy. (Alergeny: 1, 3, 7, 8)</p>
                         <button class="product-card__button">Koupit</button>
                     </article>
                     <!-- Produkt 4 -->
@@ -66,62 +67,29 @@
                         <div class="product-card__image-wrapper">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
                         </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
+                        <h3 class="product-card__title">Red Velvet</h3>
+                        <p class="product-card__desc">Klasický sametový dort s krémem. (Alergeny: 1, 3, 7)</p>
                         <button class="product-card__button">Koupit</button>
+                    </article>
+                    <!-- Produkt 5 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
+                        </div>
+                        <h3 class="product-card__title">Mrkvový dort</h3>
+                        <p class="product-card__desc">Šťavnatý mrkvový dort s ořechy. (Alergeny: 1, 3, 7, 8)</p>
+                        <button class="product-card__button">Koupit</button>
+                    </article>
+                    <!-- Produkt 6 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2 1 2 1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
+                        </div>
+                        <h3 class="product-card__title">Svatební speciál</h3>
+                        <p class="product-card__desc">Na objednávku dle přání.</p>
+                        <button class="product-card__button">Poptat</button>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <section class="section section--desserts">
-            <div class="container">
-                <h2 class="section__title">Zákusky</h2>
-                <div class="product-grid">
-                    <!-- Produkt 1 -->
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                        </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
-                        <button class="product-card__button">Koupit</button>
-                    </article>
-                    <!-- Produkt 2 -->
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                        </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
-                        <button class="product-card__button">Koupit</button>
-                    </article>
-                    <!-- Produkt 3 -->
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                        </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
-                        <button class="product-card__button">Koupit</button>
-                    </article>
-                    <!-- Produkt 4 -->
-                    <article class="product-card">
-                        <div class="product-card__image-wrapper">
-                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                        </div>
-                        <h3 class="product-card__title">Nadpis</h3>
-                        <p class="product-card__desc">Popis, alergeny, atd...</p>
-                        <button class="product-card__button">Koupit</button>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section--custom">
-            <div class="container">
-                <h2 class="section__title">Dort dle Vašich přání</h2>
-                <p class="section__text">Rádi pro vás připravíme dort na míru přesně podle vašich představ. Ať už jde o narozeniny, svatbu nebo jinou oslavu, společně doladíme chuť i vzhled tak, aby byl výsledek jedinečný. Stačí nás kontaktovat nebo se zastavit na naší prodejně.</p>
             </div>
         </section>
     </main>
