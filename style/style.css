@@ -263,7 +263,27 @@ ul {
     }
 
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-grid--stacked {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .product-card {
+        flex: 0 0 268px; /* Šířka podobná zobrazení na PC (cca 1200px / 4) */
+    }
+
+    .product-grid--stacked .product-card {
+        flex: auto;
     }
 
     .footer__container {
