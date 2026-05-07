@@ -12,3 +12,4 @@ Web je na cukrárnu. Jeho účel je e-shopy až spíše informativní.
 - Samostatná část na zákusky
 - O nás
 - Kontakty
+- Samostatný stránka o produktu
