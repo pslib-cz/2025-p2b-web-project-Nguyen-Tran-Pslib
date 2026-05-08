@@ -278,13 +278,6 @@ ul {
         -webkit-overflow-scrolling: touch;
     }
 
-    .product-grid--stacked {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
-        overflow-x: visible;
-        padding-bottom: 0;
-    }
-
     .product-card {
         flex: 0 0 268px; /* Šířka podobná zobrazení na PC (cca 1200px / 4) */
     }
@@ -296,5 +289,14 @@ ul {
     .footer__container {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 1024px){
+    .product-grid--stacked {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+        overflow-x: visible;
+        padding-bottom: 0;
     }
 }
