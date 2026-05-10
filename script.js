@@ -16,4 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
             acc.classList.toggle('product-detail__section--open');
         });
     });
+    // LightGallery initialization
+    const gallery = document.getElementById('lightgallery');
+    if (gallery) {
+        lightGallery(gallery, {
+            speed: 500,
+            plugins: [lgThumbnail],
+            licenseKey: '0000-0000-000-0000' // Using default/no key for open source
+        });
+    }
 });
