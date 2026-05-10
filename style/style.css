@@ -110,6 +110,10 @@ ul {
     min-height: 50vh;
 }
 
+.page-about .main {
+    overflow-x: hidden;
+}
+
 .section {
     margin-bottom: var(--spacing-xl);
 }
@@ -126,7 +130,7 @@ ul {
     line-height: 1.6;
 }
 
-.section__text--margin{
+.section__text--margin {
     margin-bottom: var(--spacing-lg);
 }
 
@@ -350,9 +354,18 @@ ul {
 }
 
 .contact-info__text {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
     font-size: 1.1rem;
 }
+
+.contact-info__text svg {
+    flex-shrink: 0;
+    color: var(--color-primary);
+}
+
 
 .contact-info__subtitle {
     font-size: 1.25rem;
@@ -399,14 +412,67 @@ ul {
 }
 
 /*O nás*/
-.about__content{
+.about__content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.about__img{
+.about__img {
     max-width: 800px;
+}
+
+/* Entrance Animations */
+.page-about .about__img,
+.page-about .section__text,
+.page-about .section__title {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    /* Premium smooth curve */
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 1. Bottom-most (image) - Appears last, from left */
+.page-about .about__img {
+    animation-name: slideFromLeft;
+    animation-delay: 1.2s;
+}
+
+/* 2. Middle (text) - Appears second, from right */
+.page-about .section__text {
+    animation-name: slideFromRight;
+    animation-delay: 0.7s;
+}
+
+/* 3. Top-most (heading) - Appears first, from left */
+.page-about .section__title {
+    animation-name: slideFromLeft;
+    animation-delay: 0.2s;
 }
 
 /* Responsive */
