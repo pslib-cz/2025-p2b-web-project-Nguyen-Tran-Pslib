@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Accordion for product detail
     const accordions = document.querySelectorAll('.product-detail__section--accordion');
-    
+
     accordions.forEach(acc => {
         const title = acc.querySelector('.product-detail__section-title');
         title.addEventListener('click', () => {
