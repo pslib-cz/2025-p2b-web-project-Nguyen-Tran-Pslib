@@ -126,6 +126,10 @@ ul {
     line-height: 1.6;
 }
 
+.section__text--margin{
+    margin-bottom: var(--spacing-lg);
+}
+
 /* Product Grid */
 .product-grid {
     display: grid;
@@ -392,6 +396,17 @@ ul {
 
 .gallery__item:hover .gallery__image {
     transform: scale(1.05);
+}
+
+/*O nás*/
+.about__content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__img{
+    max-width: 800px;
 }
 
 /* Responsive */
