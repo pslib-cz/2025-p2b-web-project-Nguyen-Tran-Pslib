@@ -361,6 +361,14 @@ ul {
     font-size: 1.1rem;
 }
 
+.contact-info__link{
+    text-decoration: none;
+}
+
+.contact-info__link:hover{
+    font-weight: 700;
+}
+
 .contact-info__text svg {
     flex-shrink: 0;
     color: var(--color-primary);
